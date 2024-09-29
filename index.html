@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Main Page</title>
+    <style>
+        /* You can add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #3d3c3c;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #7e7e7e;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Main Page</h1>
+        <p>This is a simple HTML page with JavaScript.</p>
+        <button id="clickButtonMath">Math</button>
+        <button id="clickButtonYTNV">YTNV</button>
+    </div>
+    <script>
+        // JavaScript code
+        document.getElementById('clickButtonMath').addEventListener('click', function() {
+            // Redirect to another page
+            window.location.href = './stuff/math/'
+        });
+        document.getElementById('clickButtonYTNV').addEventListener('click', function() {
+            // Redirect to another page
+            window.location.href = './stuff/ytnv/index.html'
+        });
+    </script>
+</body>
+</html>

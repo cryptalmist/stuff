@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Audio Player</h1>
+        <input type="text" id="videoLink" placeholder="Enter YouTube video or playlist link...">
+        <button onclick="addVideoOrPlaylist()">Add to Queue</button>
+        <div id="controls">
+            <div id="currentPlaying">Not playing</div>
+            <button id="playButton" onclick="playSound()" style="display:none;">Play</button>
+            <button id="stopButton" onclick="stopSound()" style="display:none;">Stop</button>
+            <button id="shuffleButton" onclick="toggleShuffle()">Shuffle</button>
+            <button id="loopButton" onclick="toggleLoop()">Loop</button>
+            <button id="loopQueueButton" onclick="toggleLoopQueue()">Loop Queue</button>
+        </div>
+        <div id="sliders">
+            <input type="range" id="timeSlider" oninput="seekVideo()" onmousemove="showTooltip(event)">
+            <div id="tooltip"></div>
+            <input type="range" id="volumeSlider" min="0" max="100" value="50" oninput="changeVolume()">
+        </div>
+        <div id="queue"></div>
+        <div id="player"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
