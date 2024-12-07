@@ -13,7 +13,7 @@ _G.FPSBoost = false -- really fucked up the client but the good side is fps go w
 
 getgenv().Config = {
     ["Discord"] = {
-        ["Enabled"] = true,
+        ["Enabled"] = false,
         ["WebhookUrl"] = "https://discord.com/api/webhooks/1313870749483663411/2Mw1OvPg7YXC3L9TOC2PQ58Cl7z_gExTaedm6DNfbVCm4dYScOFMPWZ_WllLHB0wfrcl",
         ["Content"] = "@everyone", -- @everyone or <@roleid/userid>, it can be just text.
         ["Time"] = 120 -- Seconds
